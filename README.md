@@ -1,54 +1,92 @@
-# React + TypeScript + Vite
+# ⏱️ Chronos Pomodoro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação desenvolvida como parte do curso de **React 19** ministrado por
+[Luiz Otávio Miranda](https://www.udemy.com/user/luiz-otavio-miranda/) na Udemy. O
+**Chronos Pomodoro** é um timer de produtividade baseado na técnica Pomodoro,
+com funcionalidades modernas como salvamento em `localStorage`, uso de
+`Web Worker`, notificações com `React Toastify`, estilização com `CSS Modules` e
+implementado com **TypeScript**.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   ⏳ Timer configurável para ciclos de Pomodoro
+-   🔀 Alternância automática entre ciclos de foco e descanso
+-   📀 Salvamento automático do estado no `localStorage`
+-   🧠 Gerenciamento eficiente de estado com React (`useState`)
+-   👷 Execução do temporizador via `Web Worker` para evitar travamentos
+-   🔔 Notificações com `React Toastify` (ex: início e fim de ciclos)
+-   🎨 Estilização modular com `CSS Modules`
+-   💡 Desenvolvido em **TypeScript** para melhor manutenção e segurança de
+    tipos
 
-## Expanding the ESLint configuration
+## 🧰 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-   [React 19](https://react.dev/)
+-   [TypeScript](https://www.typescriptlang.org/)
+-   [CSS Modules](https://github.com/css-modules/css-modules)
+-   [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
+-   [React Toastify](https://fkhadra.github.io/react-toastify/)
+-   [localStorage API](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Instalação
+
+```bash
+git clone https://github.com/GabrielHenrique16y/Chronos-pomodoro.git
+
+cd Chronos-pomodoro
+
+npm install
+
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+> ⚠️ É necessário ter o [Node.js](https://nodejs.org/) e o
+> [npm](https://www.npmjs.com/) instalados.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📁 Estrutura de Pastas (resumo)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+src/
+├— adapters/            
+├— assets/            
+├— components/       
+├— contexts/       
+├— models/            
+├— pages/            
+├— routers/            
+├— styles/        
+├— templates/            
+├— utils/            
+├— workers/          
+├— App.tsx            
+└— main.tsx           
 ```
+
+## ✅ Aprendizados
+
+Durante o desenvolvimento deste projeto, foram praticados os seguintes
+conceitos:
+
+-   Uso prático do React 19 com gerenciamento de estado moderno
+-   Modularização e componentização
+-   Utilização do `Web Worker` para processos assíncronos
+-   Persistência de dados com `localStorage`
+-   Notificações e UX com `React Toastify`
+-   Tipagem com TypeScript
+-   Organização de estilos com `CSS Modules`
+-   Roteamento com `React Router`
+
+## 📚 Curso
+
+Projeto desenvolvido durante o curso:
+**[Curso de React JS 19 e Next.js 15](https://www.udemy.com/course/curso-de-reactjs-nextjs-completo-do-basico-ao-avancado/)
+— por Luiz Otávio Miranda**
+
+## 📝 Licença
+
+Este projeto é apenas para fins de estudo. Consulte a licença do curso original
+para mais detalhes.
+
+---
+
+Feito com ❤️ por Gabriel Henrique
