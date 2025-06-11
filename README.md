@@ -7,6 +7,14 @@ com funcionalidades modernas como salvamento em `localStorage`, uso de
 `Web Worker`, notificações com `React Toastify`, estilização com `CSS Modules` e
 implementado com **TypeScript**.
 
+## 🔗 Produção
+
+Acesse a versão hospedada em produção:
+
+[Chronos Pomodoro](https://chronos-pomodoro-drab.vercel.app/)
+
+---
+
 ## 🚀 Funcionalidades
 
 -   ⏳ Timer configurável para ciclos de Pomodoro
